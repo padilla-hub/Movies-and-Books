@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/movie.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-bar w3-black">
+  <a class="w3-bar-item w3-button" href="Home.html"><i class="fa fa-home"></i> Home</a>
+  <a class="w3-bar-item w3-button" href="Movies.html"><i class="fa fa-film"></i> Movies</a>
+  <a class="w3-bar-item w3-button" href="Books.html"><i class="fa fa-book"></i> Books</a>
+  <a class="w3-bar-item w3-button" href="aboutus.html"><i class="fa fa-phone"></i> About us</a>
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-bar-item w3-button w3-right" style="width:auto;"><i class="fa fa-user"></i> Login</button>
+  <div class="w3-bar-item w3-right">
+    <input id="Search" class="w3-input w3-bar-item" type="text" placeholder="Search..." style="color: black; border-radius: 20px; height: 30px; width: 300px;">
+  </div>
+</div>
+
+<!-- Movie-section -->
+<div class="w3-container">
+  <h3><i class="fa fa-film"></i> Fantasy</h3>
+  <div class="scrolling-row">
+    <div class="cards">
+    <img src="./imgs/aladdin_poster.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/woods.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/Bridge.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/catclaws.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/poppins.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/ward.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/wicked.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/story 2.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/narnia.jpg">
+  </div>
+  </div>
+</div>
+
+<div class="w3-container">
+  <h3><i class="fa fa-film"></i> Romance</h3>
+  <div class="scrolling-row">
+    <div class="cards">
+    <img src="./imgs/Sex EducationN.jpg">
+  </div>
+  <div class="cards">
+    <img src="../Moviebook/imgs/365.jpg">
+  </div>
+  <div class="cards">
+    <img src="../Moviebook/imgs/Time.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/Love_Again_film_poster.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/mAN.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/BY LOVE.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/reality.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/first-love-1.webp">
+  </div>
+  <div class="cards">
+    <img src="./imgs/Notebook.jpg">
+  </div>
+  </div>
+</div>
+<div class="w3-container">
+  <h3><i class="fa fa-film"></i> Horror</h3>
+  <div class="scrolling-row">
+    <div class="cards">
+    <img src="./imgs/Forest.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/home.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/conjuring-3-1.webp">
+  </div>
+  <div class="cards">
+    <img src="./imgs/smile.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/conjuring.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/hucky.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/the grudge.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/Kiblat.webp">
+  </div>
+  <div class="cards">
+    <img src="./imgs/Annabelle_film_poster.jpg">
+  </div>
+  </div>
+</div>
+<!-- Modal Login Form -->
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<!-- Footer -->
+<footer class=
+"w3-container w3-black w3-center w3-padding-32">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h5>Contact Us</h5>
+      <p>Email: moviebook@example.com</p>
+      <p>Phone: +63 912 345 6789</p>
+    </div>
+    <div class="w3-third">
+      <h5>Follow Us</h5>
+      <a href="#" class="w3-button w3-small w3-light-grey w3-margin"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="w3-button w3-small w3-light-grey w3-margin"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="w3-button w3-small w3-light-grey w3-margin"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="w3-third">
+      <h5>About</h5>
+      <p>Movies & Books Review is a personal project showcasing reviews and recommendations on popular titles.</p>
+    </div>
+  </div>
+  <hr style="border-color: #444;">
+  <p>&copy; 2025 Movies & Books Review. All rights reserved.</p>
+</footer>
+</html>

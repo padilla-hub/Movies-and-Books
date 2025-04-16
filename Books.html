@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Books</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/movie.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-bar w3-black">
+  <a class="w3-bar-item w3-button" href="Home.html"><i class="fa fa-home"></i> Home</a>
+  <a class="w3-bar-item w3-button" href="Movies.html"><i class="fa fa-film"></i> Movies</a>
+  <a class="w3-bar-item w3-button" href="Books.html"><i class="fa fa-book"></i> Books</a>
+  <a class="w3-bar-item w3-button" href="aboutus.html"><i class="fa fa-phone"></i> About us</a>
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-bar-item w3-button w3-right" style="width:auto;"><i class="fa fa-user"></i> Login</button>
+  <div class="w3-bar-item w3-right">
+    <input id="Search" class="w3-input w3-bar-item" type="text" placeholder="Search..." style="color: black; border-radius: 20px; height: 30px; width: 300px;">
+  </div>
+</div>
+
+<div class="w3-container">
+  <h3><i class="fa fa-book"></i> Education</h3>
+  <div class="scrolling-row">
+    <div class="cards">
+    <img src="./imgs/Sex Education.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/educational.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/who.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/american.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/teach.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/art.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/creating-innovators.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/pullyman.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/revolution.jpg">
+  </div>
+  </div>
+</div>
+  
+<div class="w3-container">
+  <h3><i class="fa fa-book"></i> Story</h3>
+  <div class="scrolling-row">
+    <div class="cards">
+    <img src="./imgs/COVER.USE_.THIS_.Emma_-1.webp">
+  </div>
+  <div class="cards">
+    <img src="./imgs/Hippo.jpeg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/ciderrella.webp">
+  </div>
+  <div class="cards">
+    <img src=".//imgs/story-thieves-9781481409209_hr.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/pinoc.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/the-story-of-a-book-9781665903851_hr.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/The-Jungle-Book-300x419.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/The_Land_of_Stories.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/signge.jpg">
+  </div>
+  </div>
+</div>
+
+<div class="w3-container">
+  <h3><i class="fa fa-book"></i> Health</h3>
+  <div class="scrolling-row">
+    <div class="cards">
+    <img src="./imgs/health.png">
+  </div>
+  <div class="cards">
+    <img src="./imgs/Lovue.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/stay-healthy-book-new-eition.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/Eat.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/Medicine.jpg">
+  </div>
+  <div class="cards">
+    <img src=".//imgs/jane.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/workout.jpg">
+  </div>
+  <div class="cards">
+    <img src="./imgs/Big.png">
+  </div>
+  <div class="cards">
+    <img src="./imgs/herbal.jpg">
+  </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-black w3-center w3-padding-32">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h5>Contact Us</h5>
+      <p>Email: moviebook@example.com</p>
+      <p>Phone: +63 912 345 6789</p>
+    </div><!-- Modal Login Form -->
+    <div id="id01" class="modal">
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    
+    <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+    <div class="w3-third">
+      <h5>Follow Us</h5>
+      <a href="#" class="w3-button w3-small w3-light-grey w3-margin"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="w3-button w3-small w3-light-grey w3-margin"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="w3-button w3-small w3-light-grey w3-margin"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="w3-third">
+      <h5>About</h5>
+      <p>Movies & Books Review is a personal project showcasing reviews and recommendations on popular titles.</p>
+    </div>
+  </div>
+  <hr style="border-color: #444;">
+  <p>&copy; 2025 Movies & Books Review. All rights reserved.</p>
+</footer>
+</body>
+</html>
