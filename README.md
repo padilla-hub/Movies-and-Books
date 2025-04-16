@@ -1,2 +1,3 @@
 # Movies-and-Books
-Watch free movies and read books
+A simple space to explore movies and books.
+Find reviews, recommendations, and stories worth your time.
